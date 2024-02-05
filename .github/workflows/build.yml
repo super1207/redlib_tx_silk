@@ -60,8 +60,8 @@ jobs:
       if: startsWith(matrix.os, 'windows-') 
       run: |
         mkdir Release
-        cp target/i686-pc-windows-msvc/release/redlib_tx_silk.exe Release/redlib_tx_silk_windows_i686.dll
-        cp target/x86_64-pc-windows-msvc/release/redlib_tx_silk.exe Release/redlib_tx_silk_windows_x86_64.dll
+        cp target/i686-pc-windows-msvc/release/redlib_tx_silk.dll Release/redlib_tx_silk_windows_i686.dll
+        cp target/x86_64-pc-windows-msvc/release/redlib_tx_silk.dll Release/redlib_tx_silk_windows_x86_64.dll
       shell: pwsh
 
     - name: upload file1

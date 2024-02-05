@@ -1,4 +1,4 @@
-set RUSTFLAGS='-C target-feature=+crt-static'
+set RUSTFLAGS=-C target-feature=+crt-static
 cargo install cross
 rustup target add i686-pc-windows-msvc
 rustup target add x86_64-pc-windows-msvc
