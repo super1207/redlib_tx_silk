@@ -51,10 +51,10 @@ jobs:
       if: startsWith(matrix.os, 'ubuntu-') 
       run: |
         mkdir Release
-        cp target/x86_64-unknown-linux-gnu/release/redlib_tx_silk.so Release/redlib_tx_silk_linux_x86_64.so
-        cp target/aarch64-linux-android/release/redlib_tx_silk.so Release/redlib_tx_silk_android_aarch64.so
-        cp target/aarch64-unknown-linux-gnu/release/redlib_tx_silk.so Release/redlib_tx_silk_linux_aarch64.so
-        cp target/i686-unknown-linux-gnu/release/redlib_tx_silk.so Release/redlib_tx_silk_linux_i686.so
+        cp target/x86_64-unknown-linux-gnu/release/libredlib_tx_silk.so Release/redlib_tx_silk_linux_x86_64.so
+        cp target/aarch64-linux-android/release/libredlib_tx_silk.so Release/redlib_tx_silk_android_aarch64.so
+        cp target/aarch64-unknown-linux-gnu/release/libredlib_tx_silk.so Release/redlib_tx_silk_linux_aarch64.so
+        cp target/i686-unknown-linux-gnu/release/libredlib_tx_silk.so Release/redlib_tx_silk_linux_i686.so
 
     - name: before_windows_upload
       if: startsWith(matrix.os, 'windows-') 
